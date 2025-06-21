@@ -1,0 +1,781 @@
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTrack - Web3 Development</title>
+    <link rel="stylesheet" href="web-3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="learning-container">
+        <!-- Sidebar Navigation -->
+        <aside class="learning-sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-globe"></i> Web3 Development</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-category">Fundamental</li>
+                <li><a href="#web-evolution" class="active"><i class="fas fa-code-branch"></i> Evolusi Web</a></li>
+                <li><a href="#web3-basics"><i class="fas fa-cube"></i> Dasar Web3</a></li>
+                <li><a href="#blockchain-basics"><i class="fas fa-link"></i> Blockchain</a></li>
+                
+                <li class="menu-category">Development</li>
+                <li><a href="#smart-contracts"><i class="fas fa-file-contract"></i> Smart Contracts</a></li>
+                <li><a href="#solidity"><i class="fas fa-code"></i> Solidity</a></li>
+                <li><a href="#dapp-development"><i class="fas fa-window-restore"></i> DApp Development</a></li>
+                
+                <li class="menu-category">Tools</li>
+                <li><a href="#ethereum-tools"><i class="fab fa-ethereum"></i> Ethereum Tools</a></li>
+                <li><a href="#ipfs"><i class="fas fa-network-wired"></i> IPFS</a></li>
+                <li><a href="#web3js"><i class="fas fa-file-code"></i> Web3.js</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="learning-content">
+            <!-- Progress Tracker -->
+            <div class="progress-tracker">
+                <h3 class="progress-title"><i class="fas fa-tasks"></i> Progress Belajar</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">0% Complete</div>
+            </div>
+
+            <!-- Web Evolution -->
+            <section id="web-evolution" class="learning-section">
+                <h2><i class="fas fa-code-branch"></i> Evolusi Web: Web1 ke Web3</h2>
+                <div class="lesson-content">
+                    <h3>Perkembangan Generasi Web</h3>
+                    
+                    <div class="web-generations">
+                        <div class="generation">
+                            <h4>Web 1.0 (1990-2004)</h4>
+                            <ul>
+                                <li><strong>Karakter:</strong> Read-only</li>
+                                <li><strong>Teknologi:</strong> HTML statis</li>
+                                <li><strong>Contoh:</strong> Halaman perusahaan sederhana</li>
+                                <li><strong>Keterbatasan:</strong> Tidak ada interaksi pengguna</li>
+                            </ul>
+                        </div>
+                        <div class="generation">
+                            <h4>Web 2.0 (2004-sekarang)</h4>
+                            <ul>
+                                <li><strong>Karakter:</strong> Read-Write</li>
+                                <li><strong>Teknologi:</strong> AJAX, JavaScript</li>
+                                <li><strong>Contoh:</strong> Media sosial, YouTube</li>
+                                <li><strong>Masalah:</strong> Sentralisasi data</li>
+                            </ul>
+                        </div>
+                        <div class="generation">
+                            <h4>Web 3.0 (Masa Depan)</h4>
+                            <ul>
+                                <li><strong>Karakter:</strong> Read-Write-Own</li>
+                                <li><strong>Teknologi:</strong> Blockchain, AI</li>
+                                <li><strong>Contoh:</strong> DApps, Metaverse</li>
+                                <li><strong>Keunggulan:</strong> Desentralisasi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Perbandingan Web2 vs Web3</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Aspek</th>
+                            <th>Web2</th>
+                            <th>Web3</th>
+                        </tr>
+                        <tr>
+                            <td>Kepemilikan Data</td>
+                            <td>Perusahaan</td>
+                            <td>Pengguna</td>
+                        </tr>
+                        <tr>
+                            <td>Arsitektur</td>
+                            <td>Client-Server</td>
+                            <td>Peer-to-Peer</td>
+                        </tr>
+                        <tr>
+                            <td>Pembayaran</td>
+                            <td>Bank/Payment Processor</td>
+                            <td>Cryptocurrency</td>
+                        </tr>
+                        <tr>
+                            <td>Identitas</td>
+                            <td>Email/Password</td>
+                            <td>Wallet Address</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Karakteristik Web3</h3>
+                    <ul>
+                        <li><strong>Desentralisasi:</strong> Tidak ada otoritas tunggal</li>
+                        <li><strong>Permissionless:</strong> Siapa pun dapat berpartisipasi</li>
+                        <li><strong>Trustless:</strong> Tidak perlu percaya pihak ketiga</li>
+                        <li><strong>Native Payments:</strong> Menggunakan crypto</li>
+                        <li><strong>Self-Sovereign Identity:</strong> Kendali identitas penuh</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#" class="nav-btn prev-btn disabled"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#web3-basics" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Web3 Basics -->
+            <section id="web3-basics" class="learning-section">
+                <h2><i class="fas fa-cube"></i> Dasar-Dasar Web3</h2>
+                <div class="lesson-content">
+                    <h3>Komponen Inti Web3</h3>
+                    
+                    <div class="web3-components">
+                        <div class="component">
+                            <h4><i class="fab fa-ethereum"></i> Blockchain</h4>
+                            <p>Ledger terdistribusi untuk mencatat transaksi</p>
+                        </div>
+                        <div class="component">
+                            <h4><i class="fas fa-file-contract"></i> Smart Contracts</h4>
+                            <p>Kode yang dieksekusi secara otomatis</p>
+                        </div>
+                        <div class="component">
+                            <h4><i class="fas fa-wallet"></i> Crypto Wallets</h4>
+                            <p>Dompet digital untuk mengelola aset</p>
+                        </div>
+                        <div class="component">
+                            <h4><i class="fas fa-network-wired"></i> Decentralized Storage</h4>
+                            <p>Penyimpanan terdistribusi seperti IPFS</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Arsitektur Aplikasi Web3</h3>
+                    <div class="architecture-diagram">
+                        <div class="layer">
+                            <h4>Frontend</h4>
+                            <p>Antarmuka pengguna (React, Vue, dll)</p>
+                        </div>
+                        <div class="layer-connector">↓</div>
+                        <div class="layer">
+                            <h4>Web3.js/Ethers.js</h4>
+                            <p>Library untuk berinteraksi dengan blockchain</p>
+                        </div>
+                        <div class="layer-connector">↓</div>
+                        <div class="layer">
+                            <h4>Smart Contracts</h4>
+                            <p>Logika bisnis di blockchain</p>
+                        </div>
+                        <div class="layer-connector">↓</div>
+                        <div class="layer">
+                            <h4>Blockchain</h4>
+                            <p>Jaringan Ethereum atau lainnya</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Protokol Web3 Populer</h3>
+                    <table class="protocols-table">
+                        <tr>
+                            <th>Protokol</th>
+                            <th>Kegunaan</th>
+                            <th>Contoh Implementasi</th>
+                        </tr>
+                        <tr>
+                            <td>Ethereum</td>
+                            <td>Smart contract platform</td>
+                            <td>DApps, DeFi</td>
+                        </tr>
+                        <tr>
+                            <td>IPFS</td>
+                            <td>Decentralized storage</td>
+                            <td>Penyimpanan file</td>
+                        </tr>
+                        <tr>
+                            <td>Filecoin</td>
+                            <td>Decentralized storage economy</td>
+                            <td>Penyimpanan berbayar</td>
+                        </tr>
+                        <tr>
+                            <td>The Graph</td>
+                            <td>Indexing protocol</td>
+                            <td>Query data blockchain</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#web-evolution" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-basics" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Blockchain Basics -->
+            <section id="blockchain-basics" class="learning-section">
+                <h2><i class="fas fa-link"></i> Dasar-Dasar Blockchain</h2>
+                <div class="lesson-content">
+                    <h3>Apa itu Blockchain?</h3>
+                    <p>Blockchain adalah database terdistribusi yang mencatat transaksi dalam blok-blok yang dirantai bersama dan diamankan dengan kriptografi.</p>
+                    
+                    <h3>Cara Kerja Blockchain</h3>
+                    <ol>
+                        <li>Transaksi baru dibuat</li>
+                        <li>Transaksi dikirim ke jaringan node</li>
+                        <li>Node memvalidasi transaksi</li>
+                        <li>Transaksi yang divalidasi dikelompokkan dalam blok</li>
+                        <li>Blok baru ditambahkan ke blockchain</li>
+                        <li>Transaksi selesai</li>
+                    </ol>
+                    
+                    <h3>Jenis-Jenis Blockchain</h3>
+                    <div class="blockchain-types">
+                        <div class="type">
+                            <h4>Public Blockchain</h4>
+                            <ul>
+                                <li>Terbuka untuk semua</li>
+                                <li>Desentralisasi penuh</li>
+                                <li>Contoh: Bitcoin, Ethereum</li>
+                            </ul>
+                        </div>
+                        <div class="type">
+                            <h4>Private Blockchain</h4>
+                            <ul>
+                                <li>Akses terbatas</li>
+                                <li>Dikontrol organisasi</li>
+                                <li>Contoh: Hyperledger Fabric</li>
+                            </ul>
+                        </div>
+                        <div class="type">
+                            <h4>Consortium Blockchain</h4>
+                            <ul>
+                                <li>Dikelola kelompok organisasi</li>
+                                <li>Semi-desentralisasi</li>
+                                <li>Contoh: R3 Corda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Konsep Penting Blockchain</h3>
+                    <table class="concepts-table">
+                        <tr>
+                            <th>Konsep</th>
+                            <th>Penjelasan</th>
+                        </tr>
+                        <tr>
+                            <td>Decentralization</td>
+                            <td>Tidak ada otoritas pusat</td>
+                        </tr>
+                        <tr>
+                            <td>Immutability</td>
+                            <td>Data tidak bisa diubah</td>
+                        </tr>
+                        <tr>
+                            <td>Consensus</td>
+                            <td>Mekanisme persetujuan jaringan</td>
+                        </tr>
+                        <tr>
+                            <td>Smart Contracts</td>
+                            <td>Kode yang dieksekusi otomatis</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#web3-basics" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#smart-contracts" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Smart Contracts -->
+            <section id="smart-contracts" class="learning-section">
+                <h2><i class="fas fa-file-contract"></i> Smart Contracts</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian Smart Contract</h3>
+                    <p>Program komputer yang berjalan di blockchain dan secara otomatis mengeksekusi persyaratan kontrak ketika kondisi tertentu terpenuhi.</p>
+                    
+                    <h3>Karakteristik Smart Contract</h3>
+                    <ul>
+                        <li><strong>Self-executing:</strong> Berjalan otomatis</li>
+                        <li><strong>Deterministic:</strong> Hasil sama dengan input sama</li>
+                        <li><strong>Immutable:</strong> Tidak bisa diubah setelah deploy</li>
+                        <li><strong>Transparent:</strong> Kode terbuka untuk diverifikasi</li>
+                    </ul>
+                    
+                    <h3>Contoh Penggunaan Smart Contract</h3>
+                    <div class="use-cases">
+                        <div class="case">
+                            <h4>DeFi</h4>
+                            <p>Lending, borrowing, trading</p>
+                        </div>
+                        <div class="case">
+                            <h4>NFT</h4>
+                            <p>Kepemilikan aset digital</p>
+                        </div>
+                        <div class="case">
+                            <h4>Supply Chain</h4>
+                            <p>Pelacakan produk</p>
+                        </div>
+                        <div class="case">
+                            <h4>Voting</h4>
+                            <p>Sistem pemilihan terdesentralisasi</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Keuntungan Smart Contract</h3>
+                    <table class="benefits-table">
+                        <tr>
+                            <th>Keuntungan</th>
+                            <th>Penjelasan</th>
+                        </tr>
+                        <tr>
+                            <td>Kepercayaan</td>
+                            <td>Tidak perlu pihak ketiga</td>
+                        </tr>
+                        <tr>
+                            <td>Keamanan</td>
+                            <td>Diamankan oleh kriptografi</td>
+                        </tr>
+                        <tr>
+                            <td>Efisiensi</td>
+                            <td>Otomatisasi proses</td>
+                        </tr>
+                        <tr>
+                            <td>Transparansi</td>
+                            <td>Semua pihak bisa verifikasi</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Contoh Sederhana Smart Contract</h3>
+                    <pre class="code-example">
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+    uint storedData;
+    
+    function set(uint x) public {
+        storedData = x;
+    }
+    
+    function get() public view returns (uint) {
+        return storedData;
+    }
+}</pre>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-basics" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#solidity" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Solidity -->
+            <section id="solidity" class="learning-section">
+                <h2><i class="fas fa-code"></i> Pemrograman Solidity</h2>
+                <div class="lesson-content">
+                    <h3>Pengenalan Solidity</h3>
+                    <p>Bahasa pemrograman berorientasi objek untuk menulis smart contract yang berjalan di Ethereum Virtual Machine (EVM).</p>
+                    
+                    <h3>Struktur Dasar Kontrak</h3>
+                    <pre class="code-example">
+// Versi compiler
+pragma solidity ^0.8.0;
+
+// Deklarasi kontrak
+contract MyContract {
+    // Variabel state
+    string public greeting = "Hello, World!";
+    
+    // Fungsi
+    function setGreeting(string memory _greeting) public {
+        greeting = _greeting;
+    }
+    
+    // Fungsi view
+    function getGreeting() public view returns (string memory) {
+        return greeting;
+    }
+}</pre>
+                    
+                    <h3>Tipe Data Dasar</h3>
+                    <table class="data-types">
+                        <tr>
+                            <th>Tipe Data</th>
+                            <th>Contoh</th>
+                            <th>Keterangan</th>
+                        </tr>
+                        <tr>
+                            <td>bool</td>
+                            <td>true, false</td>
+                            <td>Boolean</td>
+                        </tr>
+                        <tr>
+                            <td>uint</td>
+                            <td>256, 1000</td>
+                            <td>Unsigned integer</td>
+                        </tr>
+                        <tr>
+                            <td>address</td>
+                            <td>0x1234...</td>
+                            <td>Alamat Ethereum</td>
+                        </tr>
+                        <tr>
+                            <td>string</td>
+                            <td>"Hello"</td>
+                            <td>Teks</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Fungsi Penting</h3>
+                    <ul>
+                        <li><strong>constructor():</strong> Dieksekusi saat deploy</li>
+                        <li><strong>modifier:</strong> Untuk validasi</li>
+                        <li><strong>event:</strong> Untuk logging</li>
+                        <li><strong>require():</strong> Validasi input</li>
+                    </ul>
+                    
+                    <h3>Contoh Kontrak ERC-20 Token</h3>
+                    <pre class="code-example">
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply);
+    }
+}</pre>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#smart-contracts" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#dapp-development" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- DApp Development -->
+            <section id="dapp-development" class="learning-section">
+                <h2><i class="fas fa-window-restore"></i> Membangun DApp Sederhana</h2>
+                <div class="lesson-content">
+                    <h3>Apa itu DApp?</h3>
+                    <p>Aplikasi terdesentralisasi yang berjalan di jaringan blockchain dengan frontend yang berinteraksi dengan smart contract.</p>
+                    
+                    <h3>Komponen DApp</h3>
+                    <div class="dapp-components">
+                        <div class="component">
+                            <h4>Frontend</h4>
+                            <p>React, Vue, atau framework JS lainnya</p>
+                        </div>
+                        <div class="component">
+                            <h4>Web3 Provider</h4>
+                            <p>MetaMask, WalletConnect</p>
+                        </div>
+                        <div class="component">
+                            <h4>Smart Contract</h4>
+                            <p>Logika bisnis di blockchain</p>
+                        </div>
+                        <div class="component">
+                            <h4>Blockchain</h4>
+                            <p>Jaringan seperti Ethereum</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Langkah Membuat DApp Sederhana</h3>
+                    <ol>
+                        <li>Buat smart contract dengan Solidity</li>
+                        <li>Deploy ke jaringan testnet (Rinkeby, Goerli)</li>
+                        <li>Buat frontend dengan React</li>
+                        <li>Integrasi dengan web3.js atau ethers.js</li>
+                        <li>Hubungkan dengan wallet seperti MetaMask</li>
+                        <li>Interaksi dengan smart contract dari frontend</li>
+                    </ol>
+                    
+                    <h3>Contoh Kode Frontend</h3>
+                    <pre class="code-example">
+import { ethers } from "ethers";
+import MyContractABI from "./MyContractABI.json";
+
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+const signer = provider.getSigner();
+const contractAddress = "0x123...";
+const contract = new ethers.Contract(contractAddress, MyContractABI, signer);
+
+async function getGreeting() {
+    const greeting = await contract.getGreeting();
+    console.log(greeting);
+}
+
+async function setGreeting() {
+    const tx = await contract.setGreeting("Hello Web3!");
+    await tx.wait();
+}</pre>
+                    
+                    <h3>Tools untuk Pengembangan DApp</h3>
+                    <table class="tools-table">
+                        <tr>
+                            <th>Tool</th>
+                            <th>Kegunaan</th>
+                        </tr>
+                        <tr>
+                            <td>Hardhat</td>
+                            <td>Development environment</td>
+                        </tr>
+                        <tr>
+                            <td>Truffle</td>
+                            <td>Framework pengembangan</td>
+                        </tr>
+                        <tr>
+                            <td>Remix</td>
+                            <td>Online IDE untuk Solidity</td>
+                        </tr>
+                        <tr>
+                            <td>Ganache</td>
+                            <td>Blockchain lokal untuk testing</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#solidity" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#ethereum-tools" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Ethereum Tools -->
+            <section id="ethereum-tools" class="learning-section">
+                <h2><i class="fab fa-ethereum"></i> Ethereum Development Tools</h2>
+                <div class="lesson-content">
+                    <h3>Ekosistem Tools Ethereum</h3>
+                    
+                    <div class="tools-grid">
+                        <div class="tool">
+                            <h4>Hardhat</h4>
+                            <p>Development environment untuk Ethereum</p>
+                            <ul>
+                                <li>Testing framework</li>
+                                <li>Plugin ecosystem</li>
+                                <li>Local Ethereum network</li>
+                            </ul>
+                        </div>
+                        <div class="tool">
+                            <h4>Truffle Suite</h4>
+                            <p>Framework pengembangan lengkap</p>
+                            <ul>
+                                <li>Smart contract compilation</li>
+                                <li>Testing framework</li>
+                                <li>Asset pipeline</li>
+                            </ul>
+                        </div>
+                        <div class="tool">
+                            <h4>Remix IDE</h4>
+                            <p>Browser-based IDE</p>
+                            <ul>
+                                <li>Compiler Solidity</li>
+                                <li>Debugger</li>
+                                <li>Deployment tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Proses Pengembangan</h3>
+                    <ol>
+                        <li>Menulis kontrak di Remix atau editor lokal</li>
+                        <li>Testing dengan Hardhat/Truffle</li>
+                        <li>Deploy ke jaringan testnet</li>
+                        <li>Verifikasi kontrak di Etherscan</li>
+                        <li>Bangun frontend untuk berinteraksi</li>
+                    </ol>
+                    
+                    <h3>Perbandingan Hardhat vs Truffle</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Aspek</th>
+                            <th>Hardhat</th>
+                            <th>Truffle</th>
+                        </tr>
+                        <tr>
+                            <td>Kemudahan</td>
+                            <td>Lebih modern</td>
+                            <td>Lebih matang</td>
+                        </tr>
+                        <tr>
+                            <td>Plugin</td>
+                            <td>Ekosistem luas</td>
+                            <td>Lebih terbatas</td>
+                        </tr>
+                        <tr>
+                            <td>Testing</td>
+                            <td>Menggunakan Waffle</td>
+                            <td>Mocha/Chai</td>
+                        </tr>
+                        <tr>
+                            <td>Komunitas</td>
+                            <td>Sedang berkembang</td>
+                            <td>Besar dan stabil</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#dapp-development" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#ipfs" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- IPFS -->
+            <section id="ipfs" class="learning-section">
+                <h2><i class="fas fa-network-wired"></i> IPFS untuk Desentralisasi</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian IPFS</h3>
+                    <p>InterPlanetary File System adalah protokol dan jaringan peer-to-peer untuk menyimpan dan berbagi data dalam sistem file terdistribusi.</p>
+                    
+                    <h3>Cara Kerja IPFS</h3>
+                    <ul>
+                        <li><strong>Content-Addressed:</strong> File diidentifikasi oleh hash konten</li>
+                        <li><strong>Distributed:</strong> File disimpan di banyak node</li>
+                        <li><strong>Immutable:</strong> Konten tidak bisa diubah</li>
+                        <li><strong>Offline-First:</strong> Bekerja tanpa koneksi internet</li>
+                    </ul>
+                    
+                    <h3>Menggunakan IPFS dengan DApp</h3>
+                    <ol>
+                        <li>Upload file ke IPFS (menggunakan CLI atau pinning service)</li>
+                        <li>Dapatkan CID (Content Identifier)</li>
+                        <li>Simpan CID di blockchain (smart contract)</li>
+                        <li>Akses file dari frontend menggunakan gateway</li>
+                    </ol>
+                    
+                    <h3>Contoh Kode</h3>
+                    <pre class="code-example">
+// Menyimpan CID di smart contract
+function storeHash(string memory _cid) public {
+    cid = _cid;
+}
+
+// Membaca dari frontend
+async function fetchFromIPFS(cid) {
+    const response = await fetch(`https://ipfs.io/ipfs/${cid}`);
+    const data = await response.json();
+    return data;
+}</pre>
+                    
+                    <h3>Layanan IPFS</h3>
+                    <table class="services-table">
+                        <tr>
+                            <th>Layanan</th>
+                            <th>Kegunaan</th>
+                        </tr>
+                        <tr>
+                            <td>Pinata</td>
+                            <td>Pinning service</td>
+                        </tr>
+                        <tr>
+                            <td>Infura IPFS</td>
+                            <td>API access</td>
+                        </tr>
+                        <tr>
+                            <td>Fleek</td>
+                            <td>Hosting dan storage</td>
+                        </tr>
+                        <tr>
+                            <td>IPFS Desktop</td>
+                            <td>Aplikasi desktop</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#ethereum-tools" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#web3js" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Web3.js -->
+            <section id="web3js" class="learning-section">
+                <h2><i class="fas fa-file-code"></i> Web3.js Library</h2>
+                <div class="lesson-content">
+                    <h3>Pengenalan Web3.js</h3>
+                    <p>Library JavaScript untuk berinteraksi dengan node Ethereum dan smart contract dari aplikasi web.</p>
+                    
+                    <h3>Fitur Utama</h3>
+                    <ul>
+                        <li>Berinteraksi dengan blockchain Ethereum</li>
+                        <li>Membaca dan menulis data ke smart contract</li>
+                        <li>Mengelola transaksi dan akun</li>
+                        <li>Subscribe ke event blockchain</li>
+                    </ul>
+                    
+                    <h3>Instalasi dan Setup</h3>
+                    <pre class="code-example">
+// Menggunakan npm
+npm install web3
+
+// Atau CDN
+&lt;script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"&gt;&lt;/script&gt;
+
+// Inisialisasi
+const Web3 = require('web3');
+const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");</pre>
+                    
+                    <h3>Contoh Penggunaan</h3>
+                    <pre class="code-example">
+// Mendapatkan balance akun
+async function getBalance(address) {
+    const balance = await web3.eth.getBalance(address);
+    return web3.utils.fromWei(balance, 'ether');
+}
+
+// Interaksi dengan smart contract
+const contract = new web3.eth.Contract(abi, contractAddress);
+
+// Memanggil fungsi view
+const data = await contract.methods.getData().call();
+
+// Mengirim transaksi
+await contract.methods.setData(123).send({ from: userAddress });</pre>
+                    
+                    <h3>Perbandingan Web3.js vs Ethers.js</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Aspek</th>
+                            <th>Web3.js</th>
+                            <th>Ethers.js</th>
+                        </tr>
+                        <tr>
+                            <td>Ukuran</td>
+                            <td>Lebih besar</td>
+                            <td>Lebih ringan</td>
+                        </tr>
+                        <tr>
+                            <td>API</td>
+                            <td>Callback-based</td>
+                            <td>Promise-based</td>
+                        </tr>
+                        <tr>
+                            <td>Popularitas</td>
+                            <td>Lebih tua</td>
+                            <td>Sedang naik</td>
+                        </tr>
+                        <tr>
+                            <td>Dokumentasi</td>
+                            <td>Lengkap</td>
+                            <td>Sangat baik</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#ipfs" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#" class="nav-btn next-btn disabled">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="web-3.js"></script>
+</body>
+</html>

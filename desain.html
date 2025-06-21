@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTrack - Belajar Blockchain</title>
+    <link rel="stylesheet" href="desain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="learning-container">
+        <!-- Sidebar Navigation -->
+        <aside class="learning-sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-link"></i> Blockchain</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-category">Fundamental</li>
+                <li><a href="#blockchain-intro" class="active"><i class="fas fa-info-circle"></i> Pengenalan Blockchain</a></li>
+                <li><a href="#blockchain-work"><i class="fas fa-cogs"></i> Cara Kerja Blockchain</a></li>
+                <li><a href="#blockchain-crypto"><i class="fas fa-lock"></i> Kriptografi Dasar</a></li>
+                
+                <li class="menu-category">Teknologi</li>
+                <li><a href="#blockchain-consensus"><i class="fas fa-users"></i> Mekanisme Konsensus</a></li>
+                <li><a href="#blockchain-smartcontract"><i class="fas fa-file-contract"></i> Smart Contract</a></li>
+                <li><a href="#blockchain-dapps"><i class="fas fa-window-restore"></i> DApps</a></li>
+                
+                <li class="menu-category">Aplikasi</li>
+                <li><a href="#blockchain-cryptoassets"><i class="fab fa-bitcoin"></i> Aset Kripto</a></li>
+                <li><a href="#blockchain-defi"><i class="fas fa-coins"></i> DeFi</a></li>
+                <li><a href="#blockchain-nft"><i class="fas fa-image"></i> NFT</a></li>
+                <li><a href="#blockchain-industry"><i class="fas fa-industry"></i> Industri & Enterprise</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="learning-content">
+            <!-- Progress Tracker -->
+            <div class="progress-tracker">
+                <h3 class="progress-title"><i class="fas fa-tasks"></i> Progress Belajar</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">0% Complete</div>
+            </div>
+
+            <!-- Blockchain Introduction -->
+            <section id="blockchain-intro" class="learning-section">
+                <h2><i class="fas fa-info-circle"></i> Pengenalan Blockchain</h2>
+                <div class="lesson-content">
+                    <h3>Apa itu Blockchain?</h3>
+                    <p>Blockchain adalah teknologi ledger terdistribusi (DLT) yang mencatat transaksi secara permanen dan transparan dalam blok-blok data yang terhubung dan diamankan menggunakan kriptografi.</p>
+                    
+                    <h3>Karakteristik Utama Blockchain:</h3>
+                    <ul>
+                        <li><strong>Desentralisasi:</strong> Tidak ada otoritas pusat yang mengendalikan jaringan</li>
+                        <li><strong>Transparansi:</strong> Semua transaksi dapat diverifikasi oleh semua peserta jaringan</li>
+                        <li><strong>Immutabilitas:</strong> Data yang tercatat tidak dapat diubah atau dihapus</li>
+                        <li><strong>Konsensus:</strong> Semua node harus menyetujui validitas transaksi</li>
+                    </ul>
+                    
+                    <h3>Sejarah Blockchain</h3>
+                    <p>Konsep blockchain pertama kali diimplementasikan pada tahun 2009 oleh Satoshi Nakamoto (pseudonym) sebagai teknologi dasar Bitcoin. Sejak itu, teknologi ini berkembang melampaui cryptocurrency dan digunakan di berbagai industri.</p>
+                    
+                    <h3>Jenis-Jenis Blockchain</h3>
+                    <ol>
+                        <li><strong>Public Blockchain:</strong> Terbuka untuk siapa saja (contoh: Bitcoin, Ethereum)</li>
+                        <li><strong>Private Blockchain:</strong> Dioperasikan oleh satu organisasi dengan akses terbatas</li>
+                        <li><strong>Consortium Blockchain:</strong> Dikendalikan oleh sekelompok organisasi</li>
+                        <li><strong>Hybrid Blockchain:</strong> Kombinasi public dan private blockchain</li>
+                    </ol>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#" class="nav-btn prev-btn disabled"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-work" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- How Blockchain Works -->
+            <section id="blockchain-work" class="learning-section">
+                <h2><i class="fas fa-cogs"></i> Cara Kerja Blockchain</h2>
+                <div class="lesson-content">
+                    <h3>Struktur Dasar Blockchain</h3>
+                    <p>Blockchain terdiri dari serangkaian blok yang berisi data transaksi. Setiap blok mengandung:</p>
+                    <ul>
+                        <li>Data transaksi</li>
+                        <li>Hash dari blok itu sendiri</li>
+                        <li>Hash dari blok sebelumnya</li>
+                        <li>Timestamp</li>
+                        <li>Nonce (number used once)</li>
+                    </ul>
+                    
+                    <h3>Proses Transaksi Blockchain</h3>
+                    <ol>
+                        <li><strong>Inisiasi Transaksi:</strong> Pengguna memulai transaksi dengan wallet</li>
+                        <li><strong>Propagasi Jaringan:</strong> Transaksi disiarkan ke jaringan P2P</li>
+                        <li><strong>Validasi:</strong> Node memvalidasi transaksi menggunakan algoritma konsensus</li>
+                        <li><strong>Pembentukan Blok:</strong> Transaksi yang divalidasi dikelompokkan dalam blok</li>
+                        <li><strong>Penambangan:</strong> Miner menyelesaikan masalah matematika kompleks (Proof of Work)</li>
+                        <li><strong>Penambahan Blok:</strong> Blok baru ditambahkan ke blockchain</li>
+                        <li><strong>Update Ledger:</strong> Semua node memperbarui salinan ledger mereka</li>
+                    </ol>
+                    
+                    <h3>Diagram Alur Blockchain</h3>
+                    <div class="text-diagram">
+                        [Transaksi Baru] → [Propagasi Jaringan] → [Validasi] → [Pool Transaksi] → [Pembentukan Blok] → [Penambangan] → [Blok Ditambahkan] → [Ledger Diupdate]
+                    </div>
+                    
+                    <h3>Konsep Hash dan PoW</h3>
+                    <p>Setiap blok memiliki hash unik yang berfungsi seperti sidik jari digital. Dalam sistem Proof of Work, miner bersaing untuk menemukan nonce yang menghasilkan hash dengan karakteristik tertentu (misalnya dimulai dengan sejumlah nol tertentu).</p>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-intro" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-crypto" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Cryptography Basics -->
+            <section id="blockchain-crypto" class="learning-section">
+                <h2><i class="fas fa-lock"></i> Kriptografi Dasar</h2>
+                <div class="lesson-content">
+                    <h3>Kriptografi dalam Blockchain</h3>
+                    <p>Blockchain menggunakan berbagai teknik kriptografi untuk menjamin keamanan dan integritas data:</p>
+                    
+                    <h3>1. Fungsi Hash Kriptografis</h3>
+                    <p>Fungsi hash mengubah input dengan ukuran berapapun menjadi output dengan ukuran tetap (hash). Contoh algoritma: SHA-256 (Bitcoin), Keccak-256 (Ethereum).</p>
+                    <p>Sifat hash kriptografis:</p>
+                    <ul>
+                        <li><strong>Deterministik:</strong> Input yang sama selalu menghasilkan output yang sama</li>
+                        <li><strong>One-way:</strong> Tidak mungkin merekonstruksi input dari hash</li>
+                        <li><strong>Avalanche effect:</strong> Perubahan kecil pada input mengubah hash secara signifikan</li>
+                        <li><strong>Unik:</strong> Sangat kecil kemungkinan dua input berbeda menghasilkan hash yang sama</li>
+                    </ul>
+                    
+                    <h3>2. Kriptografi Asimetris</h3>
+                    <p>Menggunakan pasangan kunci (public key dan private key):</p>
+                    <ul>
+                        <li><strong>Public key:</strong> Dapat dibagikan secara publik, digunakan untuk verifikasi</li>
+                        <li><strong>Private key:</strong> Harus dirahasiakan, digunakan untuk tanda tangan digital</li>
+                    </ul>
+                    <p>Contoh algoritma: ECDSA (Elliptic Curve Digital Signature Algorithm)</p>
+                    
+                    <h3>3. Digital Signature</h3>
+                    <p>Proses penandatanganan transaksi:</p>
+                    <ol>
+                        <li>Pembuatan hash dari data transaksi</li>
+                        <li>Enkripsi hash dengan private key pengirim</li>
+                        <li>Hasil enkripsi menjadi tanda tangan digital</li>
+                        <li>Verifikasi dengan public key pengirim</li>
+                    </ol>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-work" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-consensus" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Consensus Mechanisms -->
+            <section id="blockchain-consensus" class="learning-section">
+                <h2><i class="fas fa-users"></i> Mekanisme Konsensus</h2>
+                <div class="lesson-content">
+                    <h3>Peran Konsensus dalam Blockchain</h3>
+                    <p>Mekanisme konsensus memastikan semua node dalam jaringan menyetujui keadaan ledger yang sama, mencegah masalah seperti double spending.</p>
+                    
+                    <h3>1. Proof of Work (PoW)</h3>
+                    <p>Digunakan oleh Bitcoin, Ethereum (sebelum merge):</p>
+                    <ul>
+                        <li>Miner bersaing menyelesaikan masalah matematika kompleks</li>
+                        <li>Membutuhkan daya komputasi besar (energy intensive)</li>
+                        <li>Keamanan tinggi tetapi skalabilitas rendah</li>
+                    </ul>
+                    
+                    <h3>2. Proof of Stake (PoS)</h3>
+                    <p>Digunakan oleh Ethereum 2.0, Cardano:</p>
+                    <ul>
+                        <li>Validator dipilih berdasarkan jumlah token yang di-stake</li>
+                        <li>Lebih hemat energi dibanding PoW</li>
+                        <li>Potensi masalah "rich get richer"</li>
+                    </ul>
+                    
+                    <h3>3. Delegated Proof of Stake (DPoS)</h3>
+                    <p>Digunakan oleh EOS, Tron:</p>
+                    <ul>
+                        <li>Pemegang token memilih delegasi untuk memvalidasi blok</li>
+                        <li>Lebih cepat dan scalable</li>
+                        <li>Lebih terpusat dibanding PoS</li>
+                    </ul>
+                    
+                    <h3>4. Mekanisme Lainnya</h3>
+                    <ul>
+                        <li><strong>Proof of Authority (PoA):</strong> Validator terpercaya</li>
+                        <li><strong>Proof of History (PoH):</strong> Solana's clock mechanism</li>
+                        <li><strong>Proof of Space/Time:</strong> Menggunakan ruang penyimpanan</li>
+                        <li><strong>Byzantine Fault Tolerance (BFT):</strong> Digunakan Hyperledger</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-crypto" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-smartcontract" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Smart Contracts -->
+            <section id="blockchain-smartcontract" class="learning-section">
+                <h2><i class="fas fa-file-contract"></i> Smart Contract</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian Smart Contract</h3>
+                    <p>Smart contract adalah program yang berjalan di blockchain yang secara otomatis mengeksekusi persyaratan kontrak ketika kondisi tertentu terpenuhi.</p>
+                    
+                    <h3>Karakteristik Smart Contract</h3>
+                    <ul>
+                        <li><strong>Self-executing:</strong> Berjalan otomatis tanpa perantara</li>
+                        <li><strong>Deterministik:</strong> Hasil eksekusi selalu sama dengan input yang sama</li>
+                        <li><strong>Immutable:</strong> Tidak dapat diubah setelah di-deploy</li>
+                        <li><strong>Transparent:</strong> Kode dapat diverifikasi oleh siapa saja</li>
+                    </ul>
+                    
+                    <h3>Platform Smart Contract</h3>
+                    <ol>
+                        <li><strong>Ethereum:</strong> Pelopor smart contract dengan EVM</li>
+                        <li><strong>Binance Smart Chain:</strong> Kompatibel dengan EVM, biaya lebih murah</li>
+                        <li><strong>Solana:</strong> High throughput dengan biaya sangat rendah</li>
+                        <li><strong>Cardano:</strong> Berbasis penelitian akademis, menggunakan Haskell</li>
+                        <li><strong>Polkadot:</strong> Multi-chain dengan interoperabilitas</li>
+                    </ol>
+                    
+                    <h3>Bahasa Pemrograman</h3>
+                    <ul>
+                        <li><strong>Solidity:</strong> Bahasa utama untuk Ethereum (syntax mirip JavaScript)</li>
+                        <li><strong>Vyper:</strong> Alternatif Ethereum dengan syntax Python-like</li>
+                        <li><strong>Rust:</strong> Digunakan Solana dan Polkadot</li>
+                        <li><strong>Move:</strong> Dikembangkan oleh Diem (Facebook)</li>
+                    </ul>
+                    
+                    <h3>Contoh Aplikasi Smart Contract</h3>
+                    <ul>
+                        <li>Decentralized Finance (DeFi) protocols</li>
+                        <li>Token creation (ERC-20, ERC-721)</li>
+                        <li>Voting systems</li>
+                        <li>Supply chain tracking</li>
+                        <li>Escrow services</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-consensus" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-dapps" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- DApps -->
+            <section id="blockchain-dapps" class="learning-section">
+                <h2><i class="fas fa-window-restore"></i> DApps (Decentralized Applications)</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian DApps</h3>
+                    <p>Aplikasi terdesentralisasi yang berjalan di jaringan blockchain atau P2P, bukan di server terpusat.</p>
+                    
+                    <h3>Karakteristik DApps</h3>
+                    <ul>
+                        <li><strong>Open-source:</strong> Kode tersedia untuk umum</li>
+                        <li><strong>Decentralized:</strong> Berjalan di jaringan node</li>
+                        <li><strong>Incentivized:</strong> Menggunakan token kripto</li>
+                        <li><strong>Protocol-compliant:</strong> Mengikuti standar konsensus</li>
+                    </ul>
+                    
+                    <h3>Arsitektur DApps</h3>
+                    <ol>
+                        <li><strong>Frontend:</strong> Antarmuka pengguna (biasanya web/mobile)</li>
+                        <li><strong>Smart Contracts:</strong> Logika bisnis di blockchain</li>
+                        <li><strong>Blockchain:</strong> Jaringan terdesentralisasi</li>
+                        <li><strong>Storage:</strong> Solusi terdesentralisasi seperti IPFS</li>
+                    </ol>
+                    
+                    <h3>Perbedaan DApps vs Aplikasi Tradisional</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Aspek</th>
+                            <th>DApps</th>
+                            <th>Aplikasi Tradisional</th>
+                        </tr>
+                        <tr>
+                            <td>Infrastruktur</td>
+                            <td>Jaringan terdesentralisasi</td>
+                            <td>Server terpusat</td>
+                        </tr>
+                        <tr>
+                            <td>Kontrol</td>
+                            <td>Komunitas</td>
+                            <td>Perusahaan/organisasi</td>
+                        </tr>
+                        <tr>
+                            <td>Downtime</td>
+                            <td>Minimal (jika jaringan hidup)</td>
+                            <td>Tergantung server</td>
+                        </tr>
+                        <tr>
+                            <td>Biaya</td>
+                            <td>Biaya gas untuk eksekusi</td>
+                            <td>Biaya server dan maintenance</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Contoh DApps Populer</h3>
+                    <ul>
+                        <li><strong>Uniswap:</strong> Decentralized exchange (DEX)</li>
+                        <li><strong>Compound:</strong> Lending/borrowing protocol</li>
+                        <li><strong>CryptoKitties:</strong> Game NFT pertama yang viral</li>
+                        <li><strong>Decentraland:</strong> Virtual reality platform</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-smartcontract" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-cryptoassets" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Crypto Assets -->
+            <section id="blockchain-cryptoassets" class="learning-section">
+                <h2><i class="fab fa-bitcoin"></i> Aset Kripto</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian Aset Kripto</h3>
+                    <p>Aset digital yang menggunakan kriptografi untuk mengamankan transaksi dan mengontrol penciptaan unit baru.</p>
+                    
+                    <h3>Jenis-Jenis Aset Kripto</h3>
+                    <ol>
+                        <li><strong>Cryptocurrency:</strong> Medium pertukaran (Bitcoin, Litecoin)</li>
+                        <li><strong>Platform Tokens:</strong> Untuk ekosistem tertentu (ETH, SOL)</li>
+                        <li><strong>Utility Tokens:</strong> Akses ke produk/layanan</li>
+                        <li><strong>Security Tokens:</strong> Representasi aset finansial</li>
+                        <li><strong>Stablecoins:</strong> Nilai terikat aset lain (USDT, USDC)</li>
+                    </ol>
+                    
+                    <h3>Top Cryptocurrencies</h3>
+                    <table class="crypto-table">
+                        <tr>
+                            <th>Nama</th>
+                            <th>Simbol</th>
+                            <th>Tipe</th>
+                            <th>Use Case</th>
+                        </tr>
+                        <tr>
+                            <td>Bitcoin</td>
+                            <td>BTC</td>
+                            <td>Cryptocurrency</td>
+                            <td>Digital gold, store of value</td>
+                        </tr>
+                        <tr>
+                            <td>Ethereum</td>
+                            <td>ETH</td>
+                            <td>Platform Token</td>
+                            <td>Smart contracts, DApps</td>
+                        </tr>
+                        <tr>
+                            <td>Cardano</td>
+                            <td>ADA</td>
+                            <td>Platform Token</td>
+                            <td>Smart contracts, research-based</td>
+                        </tr>
+                        <tr>
+                            <td>Binance Coin</td>
+                            <td>BNB</td>
+                            <td>Utility Token</td>
+                            <td>Biaya transaksi di Binance ecosystem</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Cara Menyimpan Aset Kripto</h3>
+                    <ul>
+                        <li><strong>Hot Wallets:</strong> Terhubung ke internet (Metamask, Trust Wallet)</li>
+                        <li><strong>Cold Wallets:</strong> Offline storage (Ledger, Trezor)</li>
+                        <li><strong>Custodial Wallets:</strong> Dikelola pihak ketiga (exchange wallets)</li>
+                        <li><strong>Non-custodial Wallets:</strong> Pengguna mengontrol private key</li>
+                    </ul>
+                    
+                    <h3>Pertimbangan Investasi</h3>
+                    <ul>
+                        <li>Volatilitas harga tinggi</li>
+                        <li>Risiko keamanan (hacking, scam)</li>
+                        <li>Regulasi yang belum matang</li>
+                        <li>Liquidity considerations</li>
+                        <li>Fundamental analysis (white paper, tim, komunitas)</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-dapps" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-defi" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- DeFi -->
+            <section id="blockchain-defi" class="learning-section">
+                <h2><i class="fas fa-coins"></i> Decentralized Finance (DeFi)</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian DeFi</h3>
+                    <p>Sistem keuangan terbuka yang dibangun di atas blockchain, menghilangkan perantara seperti bank dan institusi finansial tradisional.</p>
+                    
+                    <h3>Komponen Utama DeFi</h3>
+                    <ol>
+                        <li><strong>Stablecoins:</strong> Aset dengan nilai stabil (DAI, USDC)</li>
+                        <li><strong>Lending Protocols:</strong> Pinjam-meminjam tanpa perantara (Aave, Compound)</li>
+                        <li><strong>Decentralized Exchanges (DEX):</strong> Pertukaran aset P2P (Uniswap, SushiSwap)</li>
+                        <li><strong>Derivatives:</strong> Kontrak finansial sintetis (Synthetix)</li>
+                        <li><strong>Insurance:</strong> Proteksi risiko smart contract (Nexus Mutual)</li>
+                    </ol>
+                    
+                    <h3>Keuntungan DeFi</h3>
+                    <ul>
+                        <li><strong>Tanpa Izin:</strong> Siapa pun dapat berpart                        <li><strong>Tanpa Izin:</strong> Siapa pun dapat berpartisipasi tanpa approval</li>
+                        <li><strong>Transparan:</strong> Semua transaksi dan kode terbuka</li>
+                        <li><strong>Non-Kustodial:</strong> Pengguna mengontrol aset mereka</li>
+                        <li><strong>Interoperabilitas:</strong> Komponen DeFi dapat saling terhubung</li>
+                        <li><strong>Inklusif:</strong> Akses untuk yang unbanked</li>
+                    </ul>
+                    
+                    <h3>Risiko DeFi</h3>
+                    <ul>
+                        <li><strong>Smart Contract Risk:</strong> Bug atau exploit dalam kode</li>
+                        <li><strong>Impermanent Loss:</strong> Risiko penyedia liquidity</li>
+                        <li><strong>Regulasi:</strong> Ketidakpastian hukum</li>
+                        <li><strong>Scalability:</strong> Biaya gas tinggi saat jaringan padat</li>
+                    </ul>
+                    
+                    <h3>Tokenomics DeFi</h3>
+                    <p>Banyak proyek DeFi memiliki token native dengan berbagai fungsi:</p>
+                    <ul>
+                        <li><strong>Governance:</strong> Hak voting untuk keputusan protokol</li>
+                        <li><strong>Staking:</strong> Untuk mengamankan jaringan</li>
+                        <li><strong>Fee Sharing:</strong> Pembagian pendapatan protokol</li>
+                        <li><strong>Utility:</strong> Akses ke fitur platform</li>
+                    </ul>
+                    
+                    <h3>Contoh Aplikasi DeFi</h3>
+                    <div class="defi-apps-grid">
+                        <div class="defi-app">
+                            <h4>Uniswap</h4>
+                            <p>DEX berbasis Automated Market Maker (AMM)</p>
+                        </div>
+                        <div class="defi-app">
+                            <h4>Aave</h4>
+                            <p>Lending protocol dengan flash loans</p>
+                        </div>
+                        <div class="defi-app">
+                            <h4>Yearn Finance</h4>
+                            <p>Yield aggregator otomatis</p>
+                        </div>
+                        <div class="defi-app">
+                            <h4>MakerDAO</h4>
+                            <p>Decentralized stablecoin (DAI) platform</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-cryptoassets" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-nft" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- NFT -->
+            <section id="blockchain-nft" class="learning-section">
+                <h2><i class="fas fa-image"></i> NFT (Non-Fungible Tokens)</h2>
+                <div class="lesson-content">
+                    <h3>Pengertian NFT</h3>
+                    <p>Token digital yang mewakili kepemilikan atas aset unik atau konten, tidak dapat dipertukarkan secara setara seperti cryptocurrency.</p>
+                    
+                    <h3>Karakteristik NFT</h3>
+                    <ul>
+                        <li><strong>Unik:</strong> Setiap NFT memiliki metadata berbeda</li>
+                        <li><strong>Langka:</strong> Kelangkaan diciptakan oleh pembuat</li>
+                        <li><strong>Indivisible:</strong> Tidak dapat dibagi seperti cryptocurrency</li>
+                        <li><strong>Verifiable:</strong> Kepemilikan dapat diverifikasi di blockchain</li>
+                    </ul>
+                    
+                    <h3>Standar NFT</h3>
+                    <ul>
+                        <li><strong>ERC-721:</strong> Standar pertama untuk NFT di Ethereum</li>
+                        <li><strong>ERC-1155:</strong> Mendukung semi-fungible tokens</li>
+                        <li><strong>SPL:</strong> Standar NFT di Solana</li>
+                        <li><strong>BEP-721:</strong> Implementasi NFT di BSC</li>
+                    </ul>
+                    
+                    <h3>Use Case NFT</h3>
+                    <div class="nft-use-cases">
+                        <div class="use-case">
+                            <h4>Seni Digital</h4>
+                            <p>Koleksi seni digital yang dapat diverifikasi</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Koleksi</h4>
+                            <p>Kartu digital, benda koleksi virtual</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Gaming</h4>
+                            <p>Aset dalam game yang benar-benar dimiliki pemain</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Real World Assets</h4>
+                            <p>Tokenisasi properti, tiket event</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Marketplace NFT</h3>
+                    <ul>
+                        <li>OpenSea (Ethereum, Polygon)</li>
+                        <li>Magic Eden (Solana)</li>
+                        <li>LooksRare (Ethereum)</li>
+                        <li>Rarible (Multi-chain)</li>
+                    </ul>
+                    
+                    <h3>Pertimbangan Sebelum Membeli NFT</h3>
+                    <ul>
+                        <li>Utility dan nilai jangka panjang</li>
+                        <li>Reputasi creator/proyek</li>
+                        <li>Biaya gas dan platform fees</li>
+                        <li>Liquidity dan volume perdagangan</li>
+                        <li>Penyimpanan metadata (on-chain vs off-chain)</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-defi" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#blockchain-industry" class="nav-btn next-btn">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Industry & Enterprise -->
+            <section id="blockchain-industry" class="learning-section">
+                <h2><i class="fas fa-industry"></i> Industri & Enterprise</h2>
+                <div class="lesson-content">
+                    <h3>Blockchain di Berbagai Industri</h3>
+                    <div class="industry-grid">
+                        <div class="industry-item">
+                            <h4>Keuangan</h4>
+                            <ul>
+                                <li>Cross-border payments</li>
+                                <li>Trade finance</li>
+                                <li>Asset tokenization</li>
+                            </ul>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Supply Chain</h4>
+                            <ul>
+                                <li>Pelacakan asal-usul produk</li>
+                                <li>Manajemen inventori</li>
+                                <li>Anti-counterfeiting</li>
+                            </ul>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Kesehatan</h4>
+                            <ul>
+                                <li>Manajemen rekam medis</li>
+                                <li>Pelacakan obat</li>
+                                <li>Research data sharing</li>
+                            </ul>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Pemerintah</h4>
+                            <ul>
+                                <li>Voting systems</li>
+                                <li>Identitas digital</li>
+                                <li>Pencatatan properti</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Enterprise Blockchain</h3>
+                    <p>Solusi blockchain untuk perusahaan dengan kebutuhan khusus:</p>
+                    <ul>
+                        <li><strong>Hyperledger Fabric:</strong> Framework open-source untuk enterprise</li>
+                        <li><strong>R3 Corda:</strong> Fokus pada financial services</li>
+                        <li><strong>Quorum:</strong> Ethereum fork untuk private blockchain</li>
+                        <li><strong>Enterprise Ethereum:</strong> Implementasi private Ethereum</li>
+                    </ul>
+                    
+                    <h3>Keuntungan Blockchain untuk Bisnis</h3>
+                    <ul>
+                        <li>Transparansi dalam operasi bisnis</li>
+                        <li>Efisiensi melalui otomatisasi</li>
+                        <li>Keamanan data yang lebih baik</li>
+                        <li>Audit trail yang tidak dapat diubah</li>
+                        <li>Pengurangan biaya perantara</li>
+                    </ul>
+                    
+                    <h3>Tantangan Adopsi Enterprise</h3>
+                    <ul>
+                        <li>Integrasi dengan sistem legacy</li>
+                        <li>Kepatuhan regulasi</li>
+                        <li>Keterampilan teknis yang dibutuhkan</li>
+                        <li>Masalah skalabilitas</li>
+                        <li>Perubahan proses bisnis</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-nav">
+                    <a href="#blockchain-nft" class="nav-btn prev-btn"><i class="fas fa-arrow-left"></i> Sebelumnya</a>
+                    <a href="#" class="nav-btn next-btn disabled">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="desain.js"></script>
+</body>
+</html>
